@@ -162,7 +162,7 @@ pub fn new(conf: &config::Configuration) -> Configuration {
             },
         ],
         gps: match gps {
-            true => Gps::TtyPath("/dev/ttyAMA0".to_string()),
+            true => Gps::TtyPath("/dev/ttyACM0".to_string()),
             false => Gps::None,
         },
         com_type: ComType::SPI,
